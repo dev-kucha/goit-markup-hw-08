@@ -1,0 +1,22 @@
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  color: var(--footer-link-color);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  transition-property: color;
+  transition-duration: var(--transfotmation-time);
+  transition-timing-function: var(--tranformation-function);
+
+  &--geo {
+    color: var(--white-text-color);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--white-text-color);
+  }
+}

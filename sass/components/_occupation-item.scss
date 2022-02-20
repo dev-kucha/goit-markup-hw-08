@@ -1,0 +1,27 @@
+.occupation-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.occupation-item__link {
+  display: block;
+  position: relative;
+}
+
+.occupation-item__image {
+  display: block;
+}
+
+.occupation-item__description {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  padding: 27px;
+  background-color: var(--background-occupation-overley);
+}

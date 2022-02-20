@@ -1,0 +1,36 @@
+.subscribe-form {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.subscribe-form__input {
+  margin-right: 12px;
+  flex-grow: 1;
+  background-color: var(--background-footer);
+  border: 1px rgba(255, 255, 255, 0.3) solid;
+  border-radius: 4px;
+  padding-left: 16px;
+  color: var(--white-text-color);
+  outline: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: border-color;
+  transition-duration: var(--transfotmation-time);
+  transition-timing-function: var(--tranformation-function);
+
+  &:focus {
+    border-color: var(--accent-button-color);
+  }
+}
+
+.subscribe-form__button {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-form__button-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: currentColor;
+}

@@ -1,0 +1,18 @@
+.clients-list {
+  display: flex;
+}
+
+.clients-list__item {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  border: 1px solid var(--decoration-grey-color);
+  border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: var(--transfotmation-time);
+  transition-timing-function: var(--tranformation-function);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
