@@ -86,12 +86,6 @@ a {
           transition-timing-function: var(--tranformation-function);
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -113,6 +107,26 @@ a {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header {
