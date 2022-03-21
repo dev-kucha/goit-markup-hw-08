@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 0 15px;
 
+  outline: 1px dotted maroon;
+
   @media screen and (min-width: $mobile) {
     width: $mobile;
   }
