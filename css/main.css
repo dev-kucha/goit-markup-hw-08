@@ -96,6 +96,11 @@ a {
 .section--occupation {
   padding-top: 47px;
 }
+@media screen and (max-width: 1199px) {
+  .section--occupation {
+    display: none;
+  }
+}
 .section--our-team {
   background-color: var(--background-secondary);
 }
@@ -357,8 +362,12 @@ a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .feature-list__title {
+    text-align: center;
+  }
 }
 
 .feature-list__text {

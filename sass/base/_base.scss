@@ -58,6 +58,10 @@ a {
   }
   &--occupation {
     padding-top: 47px;
+
+    @media screen and (max-width: ($desktop - 1)) {
+      display: none;
+    }
   }
   &--our-team {
     background-color: var(--background-secondary);
