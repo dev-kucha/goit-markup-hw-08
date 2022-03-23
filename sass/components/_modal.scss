@@ -3,11 +3,11 @@
 }
 
 .modal {
-  position: absolute;
-  width: 528px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  max-height: 90vh;
+  max-width: 90vw;
+  margin: 5vh auto;
+  position: relative;
+  overflow-y: scroll;
   transition-property: transform;
   transition-duration: var(--transfotmation-time);
   transition-timing-function: var(--tranformation-function);
@@ -16,6 +16,21 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+
+  @media screen and (min-width: $mobile) {
+    margin-top: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 450px;
+  }
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+  }
 }
 
 .close {
