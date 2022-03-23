@@ -5,16 +5,38 @@
 }
 
 .footer__container {
-  display: flex;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .footer__column {
+  text-align: center;
+  // outline: 1px dotted green;
+
   &--3 {
-    width: 270px;
-    margin-right: 30px;
+    @media screen and (min-width: $tablet) {
+      flex-basis: 50%;
+    }
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+      flex-basis: 25%;
+      // margin-right: 30px;
+    }
+
+    @media screen and (max-width: $desktop - 1) {
+      margin-bottom: 60px;
+    }
   }
   &--6 {
-    width: 570px;
+    @media screen and (min-width: $tablet) {
+      flex-basis: 100%;
+    }
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+      flex-basis: 50%;
+    }
   }
 }
 

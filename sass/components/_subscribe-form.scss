@@ -1,16 +1,27 @@
 .subscribe-form {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
 }
 
 .subscribe-form__input {
-  margin-right: 12px;
-  flex-grow: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  // flex-grow: 1;
+  width: 90%;
   background-color: var(--background-footer);
   border: 1px rgba(255, 255, 255, 0.3) solid;
   border-radius: 4px;
   padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   color: var(--white-text-color);
   outline: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -21,10 +32,31 @@
   &:focus {
     border-color: var(--accent-button-color);
   }
+
+  @media screen and (max-width: $desktop - 1) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+    margin-left: 0;
+    margin-right: 12px;
+    // flex-grow: 1;
+  }
 }
 
 .subscribe-form__button {
-  display: flex;
+  // margin-left: auto;
+  // margin-right: auto;
+  display: inline-flex;
   align-items: center;
 }
 

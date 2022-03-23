@@ -1,6 +1,10 @@
 .social {
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: $desktop) {
+    justify-content: left;
+  }
 }
 
 .social__item {
