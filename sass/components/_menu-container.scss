@@ -1,0 +1,16 @@
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  background-color: antiquewhite;
+  font-style: 12px;
+  text-align: center;
+  padding: 20px;
+
+  &.is-open {
+    display: block;
+  }
+}

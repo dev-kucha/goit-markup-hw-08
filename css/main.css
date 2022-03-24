@@ -122,7 +122,6 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  outline: 1px dotted maroon;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -141,6 +140,7 @@ a {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid var(--header-line-color);
 }
 
@@ -180,9 +180,52 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: antiquewhite;
+  font-style: 12px;
+  text-align: center;
+  padding: 20px;
+}
+.menu-container.is-open {
+  display: block;
 }
 
 .site-nav {

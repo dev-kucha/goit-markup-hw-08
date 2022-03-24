@@ -1,0 +1,13 @@
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}/*# sourceMappingURL=menu-button.css.map */
