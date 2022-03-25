@@ -1,20 +1,36 @@
 .contacts {
   display: flex;
-  margin-left: auto;
+
+  @media screen and (max-width: ($tablet - 1)) {
+    flex-direction: column-reverse;
+    position: absolute;
+    bottom: 134px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+  }
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
 }
 
 .contacts__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: $tablet) and (max-width: ($desktop - 1)) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 50px;
+  }
 }
 
 .contacts__link {
-  display: inline-flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: block;
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition-property: color;
@@ -25,11 +41,41 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  @media screen and (min-width: $tablet) {
+    display: inline-flex;
+    font-size: 12px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+  }
+}
+
+.link-phone {
+  @media screen and (max-width: ($tablet - 1)) {
+    font-size: 34px;
+    color: var(--accent-color);
+    margin-bottom: 32px;
+  }
+}
+
+.link-email {
+  @media screen and (max-width: ($tablet - 1)) {
+    font-size: 24px;
+    margin-bottom: 64px;
+  }
 }
 
 .contacts__icon {
+  display: none;
   width: 20px;
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
 }

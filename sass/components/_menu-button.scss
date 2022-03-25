@@ -4,6 +4,12 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  position: relative;
+  z-index: 2;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .menu-button .icon-cross {
