@@ -1,11 +1,15 @@
 .menu-container {
   width: 100%;
 
+  transition-property: transform;
+  transition-duration: var(--transfotmation-time);
+  transition-timing-function: var(--tranformation-function);
+
   @media screen and (max-width: ($tablet - 1)) {
-    display: none;
+    //display: none;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
 
     height: 100%;
     z-index: 1;
@@ -15,7 +19,9 @@
   }
 
   &.is-open {
-    display: block;
+    //display: block;
+    // left: 0;
+    transform: translateX(100%);
   }
 
   @media screen and (min-width: $tablet) {

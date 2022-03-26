@@ -26,35 +26,63 @@
       <div class="container header__container">
         <nav class="menu">
           <a class="logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
-          <ul class="site-nav list">
-            <li class="site-nav__item">
-              <a class="site-nav__link link" href="./index.html">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link link site-nav__link--active" href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="site-nav__item"><a class="site-nav__link link" href="">Контакты</a></li>
-          </ul>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="icon-cross" href="./images/icons.svg#cross"></use>
+              <use class="icon-menu" href="./images/icons.svg#menu"></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="site-nav list">
+              <li class="site-nav__item">
+                <a class="site-nav__link link" href="./index.html">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link link site-nav__link--active" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="site-nav__item"><a class="site-nav__link link" href="">Контакты</a></li>
+            </ul>
+            <ul class="contacts list">
+              <li class="contacts__item">
+                <a class="contacts__link link-email link" href="mailto:info@devstudio.com">
+                  <svg class="contacts__icon">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link link-phone link" href="tel:+380961111111">
+                  <svg class="contacts__icon">
+                    <use href="./images/icons.svg#icon-smartphone"></use></svg
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="menu-social list">
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link link">Instagram</a>
+              </li>
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link link">Twitter</a>
+              </li>
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link link">Facebook</a>
+              </li>
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <ul class="contacts list">
-          <li class="contacts__item">
-            <a class="contacts__link link-email link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link link-phone link" href="tel:+380961111111">
-              <svg class="contacts__icon">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
     <main>
@@ -83,10 +111,9 @@
               <a class="example-item__link link" href="">
                 <div class="example-item__thumb">
                   <img
-                    class="example-illustration"
+                    class="example-item__illustration"
                     src="./images/img-technokriak-squoosh.jpg"
                     alt="Скриншот сайта Технокряк"
-                    width="370"
                   />
                   <div class="example-item__hover-overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
@@ -107,7 +134,6 @@
                     class="example-item__illustration"
                     src="./images/img-neworlean-squoosh.jpg"
                     alt="Превью постера"
-                    width="370"
                   />
                   <div class="example-item__hover-overlay">
                     Постер это современная площадка распространения коронавируса. Компании
@@ -128,7 +154,6 @@
                     class="example-item__illustration"
                     src="./images/img-seafood-squoosh.jpg"
                     alt="Логотип ресторана Seafood"
-                    width="370"
                   />
                   <div class="example-item__hover-overlay">
                     Логотип это современная площадка распространения коронавируса. Компании
@@ -149,7 +174,6 @@
                     class="example-item__illustration"
                     src="./images/img-prime-squoosh.jpg"
                     alt="Наушники"
-                    width="370"
                   />
                   <div class="example-item__hover-overlay">
                     Prime это современная площадка распространения коронавируса. Компании используют
@@ -169,7 +193,6 @@
                     class="example-item__illustration"
                     src="./images/img-boxes-squoosh.jpg"
                     alt="Две коробки"
-                    width="370"
                   />
                   <div class="example-item__hover-overlay">
                     Boxes это современная площадка распространения коронавируса. Компании используют
@@ -189,7 +212,6 @@
                     class="example-item__illustration"
                     src="./images/img-imginspiration-squoosh.jpg"
                     alt="Монитор со скриншотом сайта"
-                    width="370"
                   />
                   <div class="example-item__hover-overlay">
                     Inspiration это современная площадка распространения коронавируса. Компании
@@ -210,7 +232,6 @@
                     class="example-item__illustration"
                     src="./images/img-limited-squoosh.jpg"
                     alt="Разворот журнала"
-                    width="370"
                   />
                   <div class="example-item__hover-overlay">
                     Limited Edition это современная площадка распространения коронавируса. Компании
@@ -231,7 +252,6 @@
                     class="example-item__illustration"
                     src="./images/img-lab-squoosh.jpg"
                     alt="Бирка на веревочке"
-                    width="370"
                   />
                   <div class="example-item__hover-overlay">
                     LAB это современная площадка распространения коронавируса. Компании используют
@@ -251,7 +271,6 @@
                     class="example-item__illustration"
                     src="./images/img-growing-squoosh.jpg"
                     alt="Ноутбук с изображением приложения и руками на клавиатуре"
-                    width="370"
                   />
                   <div class="example-item__hover-overlay">
                     Growing Business это современная площадка распространения коронавируса. Компании
@@ -342,5 +361,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

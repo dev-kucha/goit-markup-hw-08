@@ -2,6 +2,10 @@ body {
   color: var(--primary-text-color);
   font-family: $body-fonts;
   background-color: var(--white-text-color);
+
+  &.mobile-menu-open {
+    overflow: hidden;
+  }
 }
 
 p,

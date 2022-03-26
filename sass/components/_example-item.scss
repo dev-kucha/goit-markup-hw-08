@@ -13,6 +13,9 @@
 
 .example-item__illustration {
   display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .example-item__hover-overlay {
