@@ -57,6 +57,19 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
 
+  @media screen and (max-width: ($desktop - 1)) {
+    display: none;
+  }
+
+  &--our-team {
+    background-color: var(--background-secondary);
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   &--features {
     @media screen and (min-width: $desktop) {
       padding-bottom: 47px;
@@ -67,19 +80,6 @@ a {
     @media screen and (min-width: $desktop) {
       padding-top: 47px;
     }
-
-    @media screen and (max-width: ($desktop - 1)) {
-      display: none;
-    }
-  }
-
-  &--our-team {
-    background-color: var(--background-secondary);
-  }
-
-  @media screen and (min-width: $desktop) {
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 
