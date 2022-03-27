@@ -90,8 +90,8 @@ a {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .section--features {
   padding-bottom: 47px;
@@ -106,6 +106,12 @@ a {
 }
 .section--our-team {
   background-color: var(--background-secondary);
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {

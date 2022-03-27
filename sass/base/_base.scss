@@ -54,8 +54,8 @@ a {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &--features {
     padding-bottom: 47px;
@@ -71,6 +71,11 @@ a {
 
   &--our-team {
     background-color: var(--background-secondary);
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
