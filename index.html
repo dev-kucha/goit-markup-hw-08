@@ -149,35 +149,47 @@
           <h2 class="section__title title">Чем мы занимаемся</h2>
           <ul class="occupation-list list">
             <li class="occupation-item">
-              <a class="occupation-item__link link" href=""
-                ><img
-                  class="occupation-item__image"
-                  src="./images/img1-squoosh.jpg"
-                  width="370"
-                  alt="Десктоп"
-                />
+              <a class="occupation-item__link link" href="">
+                <picture>
+                  <source
+                    srcset="./images/img1-squoosh@1x.jpg 1x, ./images/img1-squoosh@2x.jpg 2x"
+                  />
+                  <img
+                    class="occupation-item__image"
+                    src="./images/img1-squoosh@1x.jpg"
+                    width="370"
+                    alt="Десктоп"
+                  />
+                </picture>
+
                 <div class="occupation-item__description">Десктопные приложения</div>
               </a>
             </li>
             <li class="occupation-item">
-              <a class="occupation-item__link link" href=""
-                ><img
-                  class="occupation-item__image"
-                  src="./images/img2-squoosh.jpg"
-                  width="370"
-                  alt="Смартфон"
-                />
+              <a class="occupation-item__link link" href="">
+                <picture>
+                  <source
+                    srcset="./images/img2-squoosh@1x.jpg 1x, ./images/img2-squoosh@2x.jpg 2x" />
+                  <img
+                    class="occupation-item__image"
+                    src="./images/img2-squoosh@1x.jpg"
+                    width="370"
+                    alt="Смартфон"
+                /></picture>
                 <div class="occupation-item__description">Мобильные приложения</div></a
               >
             </li>
             <li class="occupation-item">
-              <a class="occupation-item__link link" href=""
-                ><img
-                  class="occupation-item__image"
-                  src="./images/img3-squoosh.jpg"
-                  width="370"
-                  alt="Планшет"
-                />
+              <a class="occupation-item__link link" href="">
+                <picture>
+                  <source
+                    srcset="./images/img3-squoosh@1x.jpg 1x, ./images/img3-squoosh@2x.jpg 2x" />
+                  <img
+                    class="occupation-item__image"
+                    src="./images/img3-squoosh@1x.jpg"
+                    width="370"
+                    alt="Планшет"
+                /></picture>
                 <div class="occupation-item__description">Дизайнерские решения</div></a
               >
             </li>
@@ -189,11 +201,24 @@
           <h2 class="section__title title">Наша команда</h2>
           <ul class="team list">
             <li class="team-item">
-              <img
-                class="team-item__photo"
-                src="./images/img-igor-squoosh.jpg"
-                alt="фото Игорь Демьяненко"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img-igor-desktop@1x.jpg 1x, ./images/img-igor-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/img-igor-tablet@1x.jpg 1x, ./images/img-igor-tablet@2x.jpg 2x"
+                />
+                <source
+                  srcset="./images/img-igor-mobile@1x.jpg 1x, ./images/img-igor-mobile@2x.jpg 2x"
+                />
+                <img
+                  class="team-item__photo"
+                  src="./images/img-igor-mobile@1x.jpg"
+                  alt="фото Игорь Демьяненко"
+                />
+              </picture>
               <div class="team-item__description">
                 <h3 class="team-item__title title">Игорь Демьяненко</h3>
                 <p class="team-item__text">Product Designer</p>
@@ -226,11 +251,25 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="team-item__photo"
-                src="./images/img-olga-squoosh.jpg"
-                alt="фото Ольга Репина"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img-olga-desktop@1x.jpg 1x, ./images/img-olga-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/img-olga-tablet@1x.jpg 1x, ./images/img-olga-tablet@2x.jpg 2x"
+                />
+                <source
+                  srcset="./images/img-olga-mobile@1x.jpg 1x, ./images/img-olga-mobile@2x.jpg 2x"
+                />
+                <img
+                  class="team-item__photo"
+                  src="./images/img-olga-mobile@1x.jpg"
+                  alt="фото Ольга Репина"
+                />
+              </picture>
+
               <div class="team-item__description">
                 <h3 class="team-item__title title">Ольга Репина</h3>
                 <p class="team-item__text">Frontend Developer</p>
@@ -263,11 +302,34 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="team-item__photo"
-                src="./images/img-nikolay-squoosh.jpg"
-                alt="фото Николай Тарасов"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/img-nikolay-desktop@1x.jpg 1x,
+                    ./images/img-nikolay-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img-nikolay-tablet@1x.jpg 1x,
+                    ./images/img-nikolay-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    ./images/img-nikolay-mobile@1x.jpg 1x,
+                    ./images/img-nikolay-mobile@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="team-item__photo"
+                  src="./images/img-nikolay-mobile@1x.jpg"
+                  alt="фото Николай Тарасов"
+                />
+              </picture>
+
               <div class="team-item__description">
                 <h3 class="team-item__title title">Николай Тарасов</h3>
                 <p class="team-item__text">Marketing</p>
@@ -300,11 +362,34 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="team-item__photo"
-                src="./images/img-mihail-squoosh.jpg"
-                alt="фото Михаил Ермаков"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/img-mihail-desktop@1x.jpg 1x,
+                    ./images/img-mihail-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img-mihail-tablet@1x.jpg 1x,
+                    ./images/img-mihail-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    ./images/img-mihail-mobile@1x.jpg 1x,
+                    ./images/img-mihail-mobile@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="team-item__photo"
+                  src="./images/img-mihail-mobile@1x.jpg"
+                  alt="фото Михаил Ермаков"
+                />
+              </picture>
+
               <div class="team-item__description">
                 <h3 class="team-item__title title">Михаил Ермаков</h3>
                 <p class="team-item__text">UI Designer</p>
