@@ -93,13 +93,13 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.section--our-team {
+  background-color: var(--background-secondary);
+}
 @media screen and (max-width: 1199px) {
   .section {
     display: none;
   }
-}
-.section--our-team {
-  background-color: var(--background-secondary);
 }
 @media screen and (min-width: 1200px) {
   .section {
