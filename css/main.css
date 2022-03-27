@@ -93,11 +93,15 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.section--features {
-  padding-bottom: 47px;
+@media screen and (min-width: 1200px) {
+  .section--features {
+    padding-bottom: 47px;
+  }
 }
-.section--occupation {
-  padding-top: 47px;
+@media screen and (min-width: 1200px) {
+  .section--occupation {
+    padding-top: 47px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .section--occupation {

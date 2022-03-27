@@ -58,11 +58,15 @@ a {
   padding-bottom: 60px;
 
   &--features {
-    padding-bottom: 47px;
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 47px;
+    }
   }
 
   &--occupation {
-    padding-top: 47px;
+    @media screen and (min-width: $desktop) {
+      padding-top: 47px;
+    }
 
     @media screen and (max-width: ($desktop - 1)) {
       display: none;
